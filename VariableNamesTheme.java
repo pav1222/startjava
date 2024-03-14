@@ -1,7 +1,6 @@
-public class VariableNamesTheme{
+public class VariablesTheme{
     public static void main(String[] args) {
  
-
         //1 задание
         byte motherBoard = 120;
         int numberOfCores = 4;
