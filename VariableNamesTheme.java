@@ -1,158 +1,221 @@
-public class VariablesTheme{
+public class VariableNamesTheme{
     public static void main(String[] args) {
- 
-        //1 задание
-        byte motherBoard = 120;
-        int numberOfCores = 4;
-        double procFrecuency = 3.2;
-        System.out.println("Модель материнской платы " +motherBoard);
-        System.out.println("Количество ядер " + numberOfCores);
-        System.out.println("частота процессора "+ procFrecuency);
+        System.out.println("\n1.  Разные " +
+"переменные ");
 
+        // цифра
+        int dight = 1;
+        System.out.println("цифра = " + dight);
 
-        //2 задание
-        int pricePenAndBook = 300;
-        int sumDiscount = 33;
-        int pricePenAndBookWithDiscount = 267;
-        System.out.println("цена ручки и книги " +pricePenAndBook);
-        System.out.println("сумма скидки на ручку и книгу "+sumDiscount);
-        System.out.println("стоимость ручки и книги,со скидкой "+pricePenAndBookWithDiscount);
+        // сумма чисел
+        int sumNumbers = 22;
+        System.out.println("сумма чисел = " +
+sumNumbers);
 
+        // произведение цифр
+        int productDigits = 132;
+        System.out.println("произведение цифр = "
++ productDigits);
 
+        // максимальное число
+        int max = 200;
+        System.out.println("макс.число = "
++ max);
 
-        //3 задание
-        System.out.println("     J"+"   "+"a"+"  "+"v"+"     "+"v"+"  "+" a" );
-        System.out.println("     J"+"  "+"a"+" "+"a"+" "+" v"+"  "+" v"+"  "+" a"+" "+"a");
-        System.out.println("  J "+""+" J"+" "+"aaaaa"+" "+" V"+" "+"V "+"  "+"aaaaa");
-        System.out.println("   JJ"+""+" a    " + " a" + "  V" + "   a"  +   "     a");
+        // количество десятков
+        int quantityTens = 2;
+        System.out.println("количество десятков = "
++ quantityTens);
 
+        // вес собаки
+        double dogWeight = 7.5;
+        System.out.println("вес собаки = " +
+dogWeight);
 
-        //4 задание
-        byte by = Byte.MAX_VALUE;
-        System.out.println(by);
-        by++;
-        System.out.println(by);
-        by--;
-        System.out.println(by);
-        short s = Short.MAX_VALUE;
-        System.out.println(s);
-        s++;
-        System.out.println(s);
-        s--;
-        System.out.println(s);
-        int i = Integer.MAX_VALUE;
-        System.out.println(i);
-        i++;
-        System.out.println(i);
-        i--;
-        System.out.println(i);
-        long l = Long.MAX_VALUE;
-        System.out.println(l);
-        l++;
-        System.out.println(l);
-        l--;
-        System.out.println(l);
+        // исходное число
+        double originalNum = 2.3;
+        System.out.println("исходное число = " +
+originalNum);
 
+        // процент по вкладу
+        int rate = 23;
+        System.out.println("процент по вкладу = " +
+rate + "%");
 
+        // код ошибки
+        int errorCode = 404;
+        System.out.println("код ошибки = " +
+errorCode);
 
-        //5 задание
-        // с помощью 3 переменной
-        int a = 2;
-        int b = 5;
-        int c = a;
-        System.out.println(a);
-        System.out.println(b);
+        // тип сообщения
+        String messageType = "MMS";
+        System.out.println("тип сообщения = " +
+messageType);
 
-        // с помощью арифметических операций;
-        int a1 = 2;
-        int b1 = 5;
-        a1 = a1 + b1;
-        b1 = a1 - b1;
-        a1 = a1 - b1;
-        System.out.println(a1);
-        System.out.println(b1);
+        // число нулей
+        int numberZeros = 10;
+        System.out.println("число нулей = " +
+numberZeros);
 
-        // c помощью побитовых операций;
-        int a2 = 2;
-        int b2 = 5;
-        a2 = a2 ^ b2;
-        b2 = a2 ^ b2;
-        a2 = a2 ^ b2;
-        System.out.println(a2);
-        System.out.println(b2);
+        // уникальное число
+        double uniqueNum = 12.5;
+        System.out.println("уникальное число = " +
+uniqueNum);
 
-    
-        //6 задание
-        char ch1 = '$';
-        System.out.println(ch1);
-        System.out.println((int)ch1);
-        char ch2 = '*';
-        System.out.println(ch2);
-        System.out.println((int)ch2);
-        char ch3 = '@';
-        System.out.println(ch3);
-        System.out.println((int)ch3);
-        char ch4 = '|';
-        System.out.println(ch4);
-        System.out.println((int)ch4);
-        char ch5 = '~';
-        System.out.println(ch5);
-        System.out.println((int)ch5);
+        // случайное число
+        int randomNumber = 320;
+        System.out.println("случайное число = " +
+randomNumber);
 
+        // математическое выражение
+        String mathExpression = "2+2";
+        System.out.println("мат.выражение = " +
+mathExpression);
 
-        //7 задание
-        char c1 = '/';
-        char c2 = '\\';
-        char c3 = '_';
-        char c4 = '(';
-        char c5 = ')';
-        System.out.print("    "+c1);
-        System.out.println(c2);
-        System.out.print("   "+c1);
-        System.out.println("  "+c2);
-        System.out.print("  "+c1);
-        System.out.print(c3);
-        System.out.print(c4);
-        System.out.print(c5);
-        System.out.println(" "+c2);
-        System.out.print(" "+c1+"      ");
-        System.out.println(c2);
-        System.out.print(""+c1);
-        System.out.print(c3);
-        System.out.print(c3);
-        System.out.print(c3);
-        System.out.print(c3);
-        System.out.print(c1);
-        System.out.print(c2);
-        System.out.print(c3);
-        System.out.print(c3);
-        System.out.print(c2);
+        // выбор
+        String choise = "Да или нет?";
+        System.out.println("твой выбор = " +
+choise);
 
-        //8 задание
-        int n = 123;
-        int one = (n/1)%10;
-        int tens = (n/10)%10;
-        int hundred = (n/100)%10;
-        int sum1 = one + tens + hundred;
-        int dec1 = one * tens * hundred;
+        // счет
+        int score = 22;
+        System.out.println("счет = " +
+score);
 
-        // Число N содержит:
-        System.out.println("сотен "+hundred );
-        System.out.println("десятков "+tens );
-        System.out.println("единиц "+one );
-        System.out.println("Сумма его цифр "+sum1 );
-        System.out.println("произведение "+dec1 );
+        // максимальная длина
+        int maxLength = 120;
+        System.out.println("макс.длина = " +
+maxLength);
 
+        // пункт меню
+        byte menuItem = 3;
+        System.out.println("пункт меню = " +
+menuItem);
 
-        //9 задание
-        int totalSec = 86399;
-        int hours = totalSec / 3600;
-        int minutes = (totalSec % 3600) / 60;
-        int seconds = totalSec % 60;
+        // стоимость кофе на вынос
+        float coffeePriceToGo = 120.2f;
+        System.out.println("стоимость кофе на вынос = " +
+coffeePriceToGo);
 
-        System.out.print(hours+":");
-        System.out.print(minutes+":");
-        System.out.print(seconds);
+        // дата начала
+        String startDate = "12.05.2029";
+        System.out.println("дата начала = " +
+startDate);
+
+        // полное имя
+        String fullName = "Alexander";
+        System.out.println("полное имя = " +
+fullName);
+
+        // заголовок электронной книги
+        String header = "Alisa";
+        System.out.println("заголовок этой книги = " +
+header);
+
+        // размер
+        long size = 12000000l;
+        System.out.println("размер = " +
+size);
+
+        // вместимость
+        long capasity = 25000000l;
+        System.out.println("вместимость = " +
+capasity);
+
+        // счетчик
+        short counter = 13;
+        System.out.println("в данный момент = " +
+counter);
+
+        // путь до файла
+        String filePath = "С:/Program Files/";
+        System.out.println("путь до файла = " +
+filePath);
+
+        // количество чисел в каждой строке
+        int numbersInRow = 125;
+        System.out.println("сколько чисел в каждой строке = " +
+numbersInRow);
+
+        // сотни равны?
+        boolean isHundredsEquals = true;
+        System.out.println("равны ли сотни = " +
+isHundredsEquals);
+
+        // компьютер включен?
+        boolean isCompOn = false;
+        System.out.println("включен ли компьютер? = " +
+isCompOn);
+
+        // есть равные цифры?
+        boolean hasEqualNums = true;
+        System.out.println("есть ли равные цифры? = " +
+hasEqualNums);
+
+        // (что-либо ) создано?
+        boolean isSomethingCreated = false;
+        System.out.println("что-то создано? = " +
+isSomethingCreated);
+
+        // (что-либо ) пустое?
+        boolean isAnythingEmpty = true;
+        System.out.println("пусто ли? = " +
+isAnythingEmpty);
+
+        // (что-либо ) активное?
+        boolean isAnythingActive = false;
+        System.out.println("активно ли? = " +
+isAnythingActive);
+
+        // новый?
+        boolean isNew = true;
+        System.out.println("новый ли? = " +
+isNew);
+
+        // электронная почта действительна?
+        boolean isValidEmail = false;
+        System.out.println("действительность e-mail = " +
+isValidEmail);
+
+        // имеются уникальные строки?
+        boolean hasUniqueStrings = true;
+        System.out.println("наличие уникальных строк = " +
+hasUniqueStrings);
+
+        // старый universally unique identifier
+        String oldUuid = "00332277-6541-7781-1234-alkbcafdegxx";
+        System.out.println("Старый UUID = " +
+oldUuid);
+
+        // производитель оперативной памяти
+        String ramManufacturer = "ADATA";
+        System.out.println("Производитель ram = " +
+ramManufacturer);
+
+        // емкость жесткого диска
+        int hddCapacity = 2200000;
+        System.out.println("Емкость HDD = " +
+hddCapacity + "Мб");
+
+        // протокол передачи гипертекста
+        String http = "HTTP";
+        System.out.println("Протокол передачи гипертекста = "
++ http);
+
+        // сокращенный uniform resource locator
+        String shortUrl = "http://short.url/175";
+        System.out.println("Сокращенный URL = " +
+shortUrl);
+
+        // новый идентификатор клиента
+        int newClientId = 185869696;
+        System.out.println("Новый идентификатор клиента = " +
+newClientId);
+
+        // кодировка american standard code for information interchange
+        String ascii = "ASCII";
+        System.out.println("Кодировка = " +
+ascii);
     } 
 
 }
