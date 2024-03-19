@@ -1,104 +1,102 @@
 public class VariablesTheme {
     public static void main(String[] args) {
  
-        System.out.println("1 задание");
+        System.out.println("\n1. Вывод характеристики компьютера");
         byte motherBoard = 120;
         int numberOfCores = 4;
-        double procFrecuency = 3.2;
+        double processorFrecuency = 3.2;
+        boolean isProcessorNew = false;
+        float memoryComputer = 8.5f;
+        long bodyLengthComputer = 500l;
+        short bootTimeComputer = 2;
+        char currencyPurchaseComputer = '$';
         System.out.println("Модель материнской платы " + motherBoard);
         System.out.println("Количество ядер " + numberOfCores);
-        System.out.println("частота процессора "+ procFrecuency);
-        System.out.println();
-
-        System.out.println("2 задание");
-        int pricePenAndBook = 300;
-        int sumDiscount = 33;
-        int pricePenAndBookWithDiscount = pricePenAndBook - sumDiscount;
-        System.out.println("цена ручки и книги " + pricePenAndBook);
-        System.out.println("сумма скидки на ручку и книгу " + sumDiscount);
-        System.out.println("стоимость ручки и книги,со скидкой " + pricePenAndBookWithDiscount);
-        System.out.println();
+        System.out.println("Частота процессора " + processorFrecuency);
+        System.out.println("Процессор новый ? " + isProcessorNew);
+        System.out.println("Объем памяти компьютера " + memoryComputer);
+        System.out.println("Длина корпуса компьютера " + bodyLengthComputer);
+        System.out.println("Время загрузки компьютера " + bootTimeComputer);
+        System.out.println("За какую валюту куплен компьютер " + currencyPurchaseComputer);
         
-        System.out.println("3 задание");
+        System.out.println("\n2. Расчет стоимости товара со скидкой");
+        int pricePen = 100;
+        int priceBook = 200;
+        int pricePenBook = pricePen + priceBook;
+        int sumDiscount = (int) ((pricePen + priceBook)*0.11);
+        int pricePenBookWithDiscount = pricePenBook - sumDiscount ;
+        System.out.println("цена ручки и книги: " + pricePenBook);
+        System.out.println("сумма скидки на ручку и книгу: " + sumDiscount);
+        System.out.println("стоимость ручки и книги,со скидкой: " + pricePenBookWithDiscount);
+
+        System.out.println("\n3.Вывод слова JAVA");
         System.out.println("     J   a  v     v   a" );
         System.out.println("     J  a a  v   v   a a");
         System.out.println("  J  J aaaaa  V V   aaaaa");
         System.out.println("   JJ a     a  V   a     a");
-        System.out.println();
-
-        System.out.println("4 задание");
+        
+        System.out.println("\n4. Вывод min и max значений целых числовых типов");
         byte by = Byte.MAX_VALUE;
-        System.out.println(by);
-        by++;
-        System.out.println(by);
-        by--;
-        System.out.println(by);
+        System.out.println(by++);
+        System.out.println(by--);
         short s = Short.MAX_VALUE;
-        System.out.println(s);
-        s++;
-        System.out.println(s);
-        s--;
-        System.out.println(s);
+        System.out.println(s++);
+        System.out.println(s--);
         int i = Integer.MAX_VALUE;
-        System.out.println(i);
-        i++;
-        System.out.println(i);
-        i--;
-        System.out.println(i);
+        System.out.println(i++);
+        System.out.println(i--);
         long l = Long.MAX_VALUE;
-        System.out.println(l);
-        l++;
-        System.out.println(l);
-        l--;
-        System.out.println(l);
+        System.out.println(l++);
+        System.out.println(l--);
+        
+        System.out.println("\n5. Перестановка значений переменных");
+        int a,b;
+        a = 2;
+        b = 5;
+        System.out.println("Исходные значения пременных " + a + " и " + b);
         System.out.println();
+        System.out.println("С помощью третьей переменной: ");
+        int swap = a;
+        a = b;
+        b = swap;
+        System.out.println("Новые значения переменных " + a + " и " + b);
 
-        System.out.println("5 задание");
-        // с помощью 3 переменной
-        int a = 2;
-        int b = 5;
-        int c = a;
-        System.out.println(a);
-        System.out.println(b);
-
-        // с помощью арифметических операций;
-        int a1 = 2;
-        int b1 = 5;
-        a1 += b1;
-        b1 = a1 - b1;
-        a1 -= b1;
-        System.out.println(a1);
-        System.out.println(b1);
-
-        // c помощью побитовых операций;
-        int a2 = 2;
-        int b2 = 5;
-        a2 ^= b2;
-        b2 = a2 ^ b2;
-        a2 ^= b2;
-        System.out.println(a2);
-        System.out.println(b2);
         System.out.println();
-    
-        System.out.println("6 задание");
-        char ch1 = '$';
-        System.out.println(ch1);
-        System.out.println((int)ch1);
-        char ch2 = '*';
-        System.out.println(ch2);
-        System.out.println((int)ch2);
-        char ch3 = '@';
-        System.out.println(ch3);
-        System.out.println((int)ch3);
-        char ch4 = '|';
-        System.out.println(ch4);
-        System.out.println((int)ch4);
-        char ch5 = '~';
-        System.out.println(ch5);
-        System.out.println((int)ch5);
-        System.out.println();
+        System.out.println("C помощью арифметических операций: ");
+        a = 2;
+        b = 5;
+        a += b;
+        b = a - b;
+        a -= b;
+        System.out.println("Новые значения переменных " + a + " и " + b);
 
-        System.out.println("7 задание");
+        System.out.println();
+        System.out.println("C помощью побитовых операций: ");
+        a = 2;
+        b = 5;
+        a ^= b;
+        b ^= b;
+        a ^= b;
+        System.out.println("Новые значения переменных " + a + " и " + b);
+        
+        System.out.println("\n6. Вывод символов и их кодов");
+        char dollar = '$';
+        System.out.println(dollar);
+        System.out.println((int) dollar);
+        char asterisk = '*';
+        System.out.println(asterisk);
+        System.out.println((int) asterisk);
+        char at = '@';
+        System.out.println(at);
+        System.out.println((int) at);
+        char pipe = '|';
+        System.out.println(pipe);
+        System.out.println((int) pipe);
+        char tilde = '~';
+        System.out.println(tilde);
+        System.out.println((int) tilde);
+        
+        System.out.println("\n7. Вывод в консоль ASCII-арт Дюка");
         char c1 = '/';
         char c2 = '\\';
         char c3 = '_';
@@ -126,8 +124,7 @@ public class VariablesTheme {
         System.out.print(c3);
         System.out.print(c2);
         System.out.println();
-
-        System.out.println("8 задание");
+        System.out.println("8. Вывод количетва сотен,десятков и единиц числа");
         int n = 123;
         int one = (n/1)%10;
         int tens = (n/10)%10;
@@ -141,9 +138,8 @@ public class VariablesTheme {
         System.out.println("единиц " + one );
         System.out.println("Сумма его цифр "+ sum1 );
         System.out.println("произведение " + dec1 );
-        System.out.println();
-
-        System.out.println("9 задание");
+        
+        System.out.println("\n9. Вывод времени");
         int totalSec = 86399;
         int hours = totalSec / 3600;
         int minutes = (totalSec % 3600) / 60;
@@ -153,7 +149,6 @@ public class VariablesTheme {
         System.out.print(minutes + ":");
         System.out.print(seconds);
     } 
-
 }
 
 

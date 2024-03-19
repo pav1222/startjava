@@ -1,36 +1,36 @@
 public class VariableNamesTheme {
     public static void main(String[] args) {
-        System.out.println("\n1.  Разные " +"переменные ");
+        System.out.println("\n1. Разные " + "переменные: ");
 
-        //цифра
-        int dight = 1;
-        System.out.println("цифра = " + dight);
+        // цифра
+        int digit = 1;
+        System.out.println("цифра = " + digit);
 
-        //сумма чисел
+        // сумма чисел
         int sumNumbers = 22;
         System.out.println("сумма чисел = " + sumNumbers);
 
-        //произведение цифр
+        // произведение цифр
         int productDigits = 132;
         System.out.println("произведение цифр = " + productDigits);
 
-        //макимальное число
+        // макcимальное число
         int max = 200;
-        System.out.println("макс.число = " + max);
+        System.out.println("макс. число = " + max);
 
-        //количество десятков
+        // количество десятков
         int quantityTens = 2;
         System.out.println("количество десятков = " + quantityTens);
 
-        //вес собаки
+        // вес собаки
         double dogWeight = 7.5;
         System.out.println("вес собаки = " + dogWeight);
 
-        //исходное число
-        double originalNumbers = 2.3;
-        System.out.println("исходное число = " + originalNumbers);
+        // исходное число
+        double originalNumber = 2.3;
+        System.out.println("исходное число = " + originalNumber);
 
-        //процент по вкладу
+        // процент по вкладу
         int rate = 23;
         System.out.println("процент по вкладу = " + rate + "%");
 
@@ -47,16 +47,16 @@ public class VariableNamesTheme {
         System.out.println("число нулей = " + numberZeros);
 
         // уникальное число
-        double uniqueNumbers = 12.5;
-        System.out.println("уникальное число = " + uniqueNumbers);
+        double uniqueNumber = 12.5;
+        System.out.println("уникальное число = " + uniqueNumber);
 
         // случайное число
-        int randomNumbers = 320;
-        System.out.println("случайное число = " + randomNumbers);
+        int randomNumber = 320;
+        System.out.println("случайное число = " + randomNumber);
 
         // математическое выражение
         String mathExpression = "2+2";
-        System.out.println("мат.выражение = " + mathExpression);
+        System.out.println("мат. выражение = " + mathExpression);
 
         // выбор
         String choise = "Да или нет?";
@@ -68,7 +68,7 @@ public class VariableNamesTheme {
 
         // максимальная длина
         int maxLength = 120;
-        System.out.println("макс.длина = " + maxLength);
+        System.out.println("макс. длина = " + maxLength);
 
         // пункт меню
         byte menuItem = 3;
@@ -81,6 +81,10 @@ public class VariableNamesTheme {
         // дата начала
         String startDate = "12.05.2029";
         System.out.println("дата начала = " + startDate);
+
+        // окончание диапазона
+        int endRange = 45;
+        System.out.println("Окончание диапазона = " + endRange);
 
         // полное имя
         String fullNameEmployeeMonth = "Александр Александрович Александров";
@@ -95,8 +99,8 @@ public class VariableNamesTheme {
         System.out.println("размер = " + size);
 
         // вместимость
-        long capasity = 25000000l;
-        System.out.println("вместимость = " + capasity);
+        long capacity = 25000000l;
+        System.out.println("вместимость = " + capacity);
 
         // счетчик
         short counter = 13;
@@ -109,8 +113,9 @@ public class VariableNamesTheme {
         // количество чисел в каждой строке
         int numbersInRow = 125;
         System.out.println("сколько чисел в каждой строке = " + numbersInRow);
+        System.out.println();
+        System.out.println("\n2. boolean-переменные");
 
-        System.out.println("\n2.  boolean переменные");
         // сотни равны?
         boolean isEqualHundreds = true;
         System.out.println("равны ли сотни = " + isEqualHundreds);
@@ -132,8 +137,8 @@ public class VariableNamesTheme {
         System.out.println("пусто ли? = " + isEmpty);
 
         // (что-либо ) активное?
-        boolean isAnythingActive = false;
-        System.out.println("активно ли? = " + isAnythingActive);
+        boolean isActive = false;
+        System.out.println("активно ли? = " + isActive);
 
         // новый?
         boolean isNew = true;
@@ -145,8 +150,10 @@ public class VariableNamesTheme {
 
         // имеются уникальные строки?
         boolean hasUniqueStrings = true;
-        System.out.println("наличие уникальных строк = " + hasUniqueStrings);
-        System.out.println("/n3.  Аббревиатуры");
+        System.out.println("наличие уникальных строк =  " + hasUniqueStrings);
+        System.out.println();
+
+        System.out.println("\n3. Аббревиатуры");
         // старый universally unique identifier
         String oldUuid = "00332277-6541-7781-1234-alkbcafdegxx";
         System.out.println("Старый UUID = " + oldUuid);
