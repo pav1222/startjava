@@ -114,7 +114,7 @@ public class VariableNamesTheme {
         int numbersInRow = 125;
         System.out.println("сколько чисел в каждой строке = " + numbersInRow);
         System.out.println();
-        System.out.println("\n2. boolean-переменные");
+        System.out.println("\n\n2. boolean-переменные");
 
         // сотни равны?
         boolean isEqualHundreds = true;
@@ -153,7 +153,7 @@ public class VariableNamesTheme {
         System.out.println("наличие уникальных строк =  " + hasUniqueStrings);
         System.out.println();
 
-        System.out.println("\n3. Аббревиатуры");
+        System.out.println("\n\n3. Аббревиатуры");
         // старый universally unique identifier
         String oldUuid = "00332277-6541-7781-1234-alkbcafdegxx";
         System.out.println("Старый UUID = " + oldUuid);

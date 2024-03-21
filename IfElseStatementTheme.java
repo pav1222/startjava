@@ -1,7 +1,7 @@
 public class IfElseStatementTheme{
 	public static void main(String[] args) {
 
-        // 1 задание
+        System.out.println("\n1. Перевод псевдокода на язык Java");
         String person = "man";
         if (person == "man") {
         System.out.println("женщина");
@@ -29,7 +29,7 @@ public class IfElseStatementTheme{
         System.out.println("Another first letter");
         }
 
-        // 2 задание
+        System.out.println("\n2. Поиск большего числа");
         int num1 = 2;
         int num2 = 5;
         if (num1 > num2) {
@@ -40,7 +40,7 @@ public class IfElseStatementTheme{
         System.out.println("num2 равно num1");
         }
 
-        // 3 задание
+        System.out.println("\n3. Проверка числа");
         int number = 3;
         if (number == 0) {
         System.out.print(number + " c равно 0, ");
@@ -56,7 +56,7 @@ public class IfElseStatementTheme{
         System.out.print("нечетное ");
         }
 
-        // 4 задание
+        System.out.println("\n4. Поиск одинаковых цифр в числах");
         int a = 727;
         int b = 138;
         int a1, a2, a3;
@@ -86,7 +86,7 @@ public class IfElseStatementTheme{
         System.out.println("Нет совпадающих цифр");
         }
 
-        // 5 задание
+        System.out.println("\n5. Определение символа по его коду");
         char ch = '\u0057';
         if (ch >= 97 & ch <= 122) {
         System.out.println("\u0057 - маленькая буква");
@@ -98,7 +98,7 @@ public class IfElseStatementTheme{
         System.out.println("\u0057 - не буква и не цифра");
         }
 
-        // 6 задание
+        System.out.println("\n6. Подсчет суммы вклада и начисленных банком %");
         int depositSum = 301000;
         double fivePercents = depositSum * 0.05;
         double sevenPercents = depositSum * 0.07;
@@ -124,7 +124,7 @@ public class IfElseStatementTheme{
         System.out.println("Cумма начисленного процента: " + tenPercents);
         }
 
-        // 7 задание
+        System.out.println("\n7. Определение оценки по предмету");
         int grade1 = 0;
         int grade2 = 0;
 
@@ -143,11 +143,9 @@ public class IfElseStatementTheme{
         } else if (percentOfHistory > 0.91) {
         grade1 = 5;
         System.out.println("Оценка по истории: " + grade1);
-
         }
-
+        
         double percentOfProgramming = 0.92;
-
         if (percentOfProgramming <= 0.60) {
         grade2 = 2;
         System.out.println("Оценка по программированию: " + grade2);
@@ -170,7 +168,7 @@ public class IfElseStatementTheme{
         double averagePercent = (percentOfHistory + percentOfProgramming) / 2;
         System.out.println("средний процент по предметам: " + averagePercent);
 
-        // 8 задание
+        System.out.println("\n8. Расчет годовой прибыли");
         int monthlySale = 13000;
         int rentOfRoomInMonth = 5000;
         int costOfProduction = 9000;
