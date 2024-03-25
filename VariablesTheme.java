@@ -87,9 +87,12 @@ public class VariablesTheme {
         char roundBrackets2 = ')';
         System.out.println("    " + slash + backslash);
         System.out.println("   " + slash + "  " + backslash);
-        System.out.println("  " + slash + underscore + roundBrackets1 + roundBrackets2 + " " + backslash);
+        System.out.println("  " + slash + underscore + roundBrackets1 + " " + roundBrackets2 + 
+        backslash);
         System.out.println(" " + slash + "      " + backslash);
-        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash + backslash + underscore + underscore + backslash);
+        System.out.println("" + slash + underscore + underscore + underscore + underscore + slash + 
+        backslash + underscore + underscore + backslash);
+
 
         System.out.println("\n\n8. Вывод количеcтва сотен, десятков и единиц числа");
         int n = 123;

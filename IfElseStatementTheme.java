@@ -1,8 +1,8 @@
 public class IfElseStatementTheme{
 	public static void main(String[] args) {
         System.out.println("\n1. Перевод псевдокода на язык Java");
-        String person = "man";
-        if (person == "man") {
+        String sex = "man";
+        if (sex == "man") {
             System.out.println("женщина");
         } else {
             System.out.println("мужчина");
@@ -32,69 +32,66 @@ public class IfElseStatementTheme{
         int num1 = 2;
         int num2 = 5;
         if (num1 > num2) {
-            System.out.println("num1 больше num2");
+            System.out.println(num1 + " больше " + num2);
         } else if (num2 > num1) {
-            System.out.println("num2 больше num1");
+            System.out.println(num2 + " больше " + num1);
         } else {
-            System.out.println("num2 равно num1");
+            System.out.println(num2 + " равно " + num1);
         }
 
         System.out.println("\n3. Проверка числа");
         int number = 3;
-        if (number == 0) {
-            System.out.print(number + " c равно 0, ");
-        } else if (number > 0) {
+        if (number != 0) {
+            if (number >= 1) {
             System.out.print(number + " положительное, ");
-        } else if (number < 0) {
+        } else {
             System.out.print(number + " отрицательное, ");
         }
-    
         if (number % 2 == 0) {
             System.out.print("четное ");
         } else {
             System.out.print("нечетное ");
         }
+        } else {
+            System.out.print("number = 0 ");
+        }
+        System.out.println();
 
         System.out.println("\n4. Поиск одинаковых цифр в числах");
-        int a = 727;
-        int b = 138;
-        int a1, a2, a3;
-        int b1, b2, b3;
-        String r1 = "№1";
-        String r2 = "№2";
-        String r3 = "№3";
+        int a = 123;
+        int b = 223;
+        int ones1 = a % 10 ;
+        int tens1 = (a / 10) % 10;
+        int hundreds1 = (a / 100) % 10;
 
-        a1 = a / 100;
-        a2 = ((a - (a1 * 100)) / 10);
-        a3 = (a - (a1 * 100) - (a2 * 10));
-        a3 = (a - (a1 * 100) - (a2 * 10));
-        b1 = b / 100;
-        b2 = ((b - (b1 * 100)) / 10);
-        b3 = (b - (b1 * 100) - (b2 * 10));
+        int ones2 = b % 10;
+        int tens2 = (b / 10) % 10;
+        int hundreds2 = (b / 100) % 10;
         System.out.println("Исходные числа: " + a + " и " + b);
-
-        if (a1 == b1) {
-            System.out.println("Цифры совпадают в разряде " + r1 + ",совпавшие цифры:  " + a1 + " и " + b1);
-        }
-        if (a2 == b2) {
-            System.out.println("Цифры совпадают в разряде " + r2 + ",совпавшие цифры: " + a2 + " и " + b2);
-        }
-        if (a3 == b3) {
-            System.out.println("Цифры совпадают в разряде " + r3 + ",совпавшие цифры: " + a3 + " и " + b3);
+        if (ones1 != ones2 && tens1 != tens2 && hundreds1 != hundreds2) {
+            System.out.println("Нет совпадающих цифр, все разряды разные");
         } else {
-            System.out.println("Нет совпадающих цифр");
+        if (ones1 == ones2) {
+            System.out.println("Цифры совпадают в разряде " + "3" + " , совпавшие цифры: " + ones1 + " и " + ones2);
         }
-
+        if (tens1 == tens2) {
+            System.out.println("Цифры совпадают в разряде " + "2" + " , совпавшие цифры: " + tens1 + " и " + tens2);
+        }
+        if (hundreds1 == hundreds2) {
+            System.out.println("Цифры совпадают в разряде " + "1" + " , совпавшие цифры: "
+        + hundreds1 + " и " + hundreds2);
+        }}
+         
         System.out.println("\n5. Определение символа по его коду");
-        char ch = '\u0057';
-        if (ch >= 97 & ch <= 122) {
-            System.out.println("\u0057 - маленькая буква");
-        } else if (ch >= 41 & ch <= 90) {
-            System.out.println("\u0057 - большая буква");
-        } else if (ch >= 30 & ch <= 39) {
-            System.out.println("\u0057 - цифра");
+        char symbol = '\u0057';
+        if (symbol >= 'a' && symbol <= 'z') {
+            System.out.println(symbol + " - маленькая буква");
+        } else if (symbol >= 'W' && symbol <= 'Z') {
+            System.out.println(symbol + " - большая буква");
+        } else if (symbol >= '0' && symbol <= '9') {
+            System.out.println(symbol + " - цифра");
         } else {
-            System.out.println("\u0057 - не буква и не цифра");
+            System.out.println(symbol + " - не буква и не цифра");
         }
 
         System.out.println("\n6. Подсчет суммы вклада и начисленных банком %");
