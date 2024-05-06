@@ -1,4 +1,4 @@
-package com.startjava.Lesson_1.Final.RpsGameFormatting;
+package com.startjava.Lesson_1.final_;
 
 import java.util.Random;
 
